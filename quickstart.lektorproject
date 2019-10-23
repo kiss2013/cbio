@@ -1,0 +1,13 @@
+[project]
+name = Tennis
+url = https://www.getlektor.com/
+url_style = absolute
+
+themes = d2
+
+[packages]
+lektor-markdown-header-anchors = 0.3.1
+lektor-markdown-highlighter = 0.3.1
+lektor-markdown-admonition = 0.3.1
+lektor-atom = 0.3
+lektor-tags = 0.3

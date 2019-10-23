@@ -1,0 +1,37 @@
+git clone
+git remote show origin
+
+git init
+
+git new_branch
+git branch new_branch
+git checkout new_branch
+git log
+git status 
+
+git commit -am "My new branch"
+=
+git add new_branch    (git add . )
+git commit -m "My new branch"
+
+
+
+git checkout master 
+git merge new_branch (- to current master branch)
+gitk - the GUI utility for tree view
+
+git branch -d new_branch (- delete the new_branch branch) 
+git branch -D new_branch (- delete  if new_branch unmerged) 
+
+
+vim
+vi
+wq
+
+
+[Adding an existing project to GitHub using the command line]
+(https://help.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line)
+[git remote add]
+(https://help.github.com/en/github/using-git/adding-a-remote)
+
+[2.5 Git Basics - Working with Remotes](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)

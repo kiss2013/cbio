@@ -1,0 +1,3 @@
+%windir%\system32\cmd.exe "/K" C:\Users\alter_000\anaconda2\scripts\activate.bat C:\Users\alter_000\anaconda2\envs\py37
+
+

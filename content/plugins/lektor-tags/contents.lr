@@ -1,0 +1,55 @@
+name: lektor-tags
+---
+categories: content
+---
+tags:
+
+tags
+page generation
+virtual paths
+setup-env
+---
+summary:
+
+Super plugin for dummy ideas
+
+
+---
+title: Hello Lektor!
+---
+pub_date: 2015-12-21
+---
+author: Armin Ronacher
+---
+twitter_handle: mitsuhiko
+---
+body:
+
+#### banner ####
+image: banner.jpg
+----
+height: 500
+----
+contents: This is "Contents" field
+#### text-block ####
+text: 1 This is the first text block
+----
+class: default
+#### text-block ####
+text:
+
+1  This is the second  text block
+ Welcome to Lektor, the static content management system that introduces a new paradigm for developing beautiful websites.
+----
+class: default
+#### slideshowURL ####
+slides:
+
+##### slideURL #####
+description: First slide 823x450
+-----
+geturl: https://via.placeholder.com/600x100.png/0000FF/808080
+##### slideURL #####
+description: Second slide
+-----
+geturl: https://via.placeholder.com/600x100.png?text=Visit+WhoIsHostingThis.com+Buyers+Guide

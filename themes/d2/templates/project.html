@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.name }}{% endblock %}
+{% block body %}
+  <h1>{{ this.name }}</h1>
+  <div class="description">{{ this.description }}</div>
+
+{% if this.tags %}
+  <ul>
+    {% for t in this.tags -%}
+      <li>
+        <a href="{{ ('/projects/tag/' ~ t.lower()~ '/')|url }}">
+          All posts tagged {{ t }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+{% endblock %}
