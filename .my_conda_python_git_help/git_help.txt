@@ -36,3 +36,12 @@ wq
 
 [2.5 Git Basics - Working with Remotes](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
 
+[Git-Branching-Basic-Branching-and-Merging#_basic_merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#_basic_merging)
+$ git checkout -b hotfix
+Switched to a new branch 'hotfix'
+
+$ git checkout master
+$ git merge hotfix
+
+
+[Git-Branching-Rebasing](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)
