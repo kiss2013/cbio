@@ -1,0 +1,7 @@
+{% if this.video %}
+{% set mp4 = record.attachments.get(this.video) %}
+<div class="embed-responsive embed-responsive-{{ this.ratio }}">
+<video class="embed-responsive-item" controls=""><source src="{{ mp4|url
+  }}" type="video/mp4">Your browser does not support HTML5 video </video>
+</div>
+{% endif %}

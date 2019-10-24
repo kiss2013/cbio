@@ -1,0 +1,6 @@
+{% if this.audio %}
+{% set mp3 = record.attachments.get(this.audio) %}<div class="text-block text-block-centered">
+<audio controls=""><source src="{{ mp3|url
+  }}" type="audio/mpeg">Your browser does not support the audio tag. </audio>
+</div>
+{% endif %}

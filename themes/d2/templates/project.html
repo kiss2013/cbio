@@ -1,9 +1,28 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.name }}{% endblock %}
+
+{% from 'macros/blocksupport.html' import render_full_width_blocks %}
 {% block body %}
   <h1>{{ this.name }}</h1>
   <div class="description">{{ this.description }}</div>
 
+  <div class="blog-post">
+    {% call render_full_width_blocks(this.body.blocks) %}
+      <div class="meta-bar">
+        <h1>{{ this.name }}</h1>
+        <p class="meta">
+          by
+          {% if this.twitter_handle %}
+            <a href="https://twitter.com/{{ this.twitter_handle }}">{{
+              this.author or this.twitter_handle }}</a>
+          {% else %}
+            {{ this.author }}
+          {% endif %}
+          on {{ this.date|dateformat('full') }}
+        </p>
+      </div>
+    {% endcall %}
+</div>
 {% if this.tags %}
   <ul>
     {% for t in this.tags -%}
