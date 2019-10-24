@@ -40,8 +40,11 @@ wq
 $ git checkout -b hotfix
 Switched to a new branch 'hotfix'
 
-$ git checkout master
-$ git merge hotfix
-
+$ git checkout dev
+$ git merge LektorBranch
+C:\Users\alter_000\OneDrive\Lektor\quickstart>git branch -v
+  LektorBlocks 0bb2e61 added mergeAandRrebase to helpfile
+* dev          0bb2e61 added mergeAandRrebase to helpfile
+  master       ac23012 after pull conflict
 
 [Git-Branching-Rebasing](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)
